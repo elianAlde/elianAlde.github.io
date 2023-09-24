@@ -1,0 +1,53 @@
+body{
+	background-color: #dddddd;
+}
+
+#menu_container{
+	width: 417px;
+	border: 1px solid green;
+}
+
+#stripe{
+	width: 100%;
+	height: 50px;
+	background-color: black;
+}
+
+#lang{
+	width: 100%;
+	background-color: white;
+	padding-top: 15px;
+
+	display: flex;
+	justify-content: end;
+}
+
+#sel_lang{
+	width: 80px;
+	margin-right: 10px;
+}
+
+#icons{
+	width: 100%;
+	background-color: white;
+	border-bottom-right-radius: 40px;
+	border-bottom-left-radius: 40px;
+	box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);;
+}
+
+nav{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 15px;
+
+}
+
+ul{
+	display: flex;
+	flex-direction: row;
+}
+
+li{
+	padding: 10px;
+}
