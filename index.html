@@ -12,11 +12,11 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="https://cdn.tailwindcss.com"></script>
         <script src="script/script.js"></script>
-        <script src="script/attivato.js"></script>
+        <script src="script/attivato.js" async defer></script>
     </head>
 
     <body>
-        <div class="menu_container">
+        <div id="menu_container">
 
             <div id="stripe"></div>
 
@@ -33,30 +33,30 @@
 
             <div id="icons">
                 <nav>
-                    <ul>
-                      <li class="icon-link" style="background-color: #dddddd; border-radius: 20px;">
-                        <a href="#"><img src="assets/icons/spaghetti-color.svg"></a>
+                    <ul id="lista_icone">
+                      <li class="icon-link active">
+                        <a href="#"><img name="spaghetti" src="assets/icons/spaghetti-black.svg"></a>
                       </li>
-                      <li class="icon-link" >
-                        <a href="#"><img src="assets/icons/pizza-black.svg"></a>
-                      </li>
-                      <li class="icon-link">
-                        <a href="#"><img src="assets/icons/burger-black.svg"></a>
-                      </li>
-                      <li class="icon-link" style="background-color: #dddddd; border-radius: 20px;">
-                        <a href="#"><img src="assets/icons/french-fries-color.svg"></a>
+                      <li  class="icon-link">
+                        <a href="#"><img name="pizza" src="assets/icons/pizza-black.svg"></a>
                       </li>
                       <li class="icon-link">
-                        <a href="#"><img src="assets/icons/drink-black.svg"></a>
+                        <a href="#"><img name="burger" src="assets/icons/burger-black.svg"></a>
                       </li>
                       <li class="icon-link">
-                        <a href="#"><img src="assets/icons/cake-black.svg"></a>
+                        <a href="#"><img name="french-fries" src="assets/icons/french-fries-black.svg"></a>
+                      </li>
+                      <li class="icon-link">
+                        <a href="#"><img name="drink" src="assets/icons/drink-black.svg"></a>
+                      </li>
+                      <li class="icon-link">
+                        <a href="#"><img name="cake" src="assets/icons/cake-black.svg"></a>
                       </li>
                     </ul>
                 </nav>
             </div>
 
-            <div id="menu">
+            <div id="menu_list">
                 
             </div>
 
