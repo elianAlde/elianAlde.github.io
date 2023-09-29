@@ -71,8 +71,8 @@ $(document).ready(function() {
         }
 
         // Ottieni il nome dell'immagine dalla voce del menu cliccata
-        const itemName = $(this).attr('name')
+        //const itemName = $(this).attr('name')
 
-        itemName.attr('src', 'assets/icons/' + itemName + "-color.svg");
+        //itemName.attr('src', 'assets/icons/' + itemName + "-color.svg");
     });
 });
