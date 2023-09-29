@@ -63,6 +63,11 @@ $(document).ready(function() {
         // Aggiungi la classe 'active' solo all'elemento cliccato
         $(this).addClass('active');
 
+
+        if($(this).attr('tipo', "spaghetti")){
+            console.log("iddu è");
+        }
+
         // Ottieni il nome dell'immagine dalla voce del menu cliccata
         const itemName = $(this).attr('name')
 
