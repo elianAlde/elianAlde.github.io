@@ -66,6 +66,7 @@ $(document).ready(function() {
 
         if($(this).attr('tipo', "spaghetti")){
             console.log("iddu è");
+            $(this).attr('src', 'assets/icons/' + $(this).attr('tipo', "spaghetti") + "-color.svg");
         }
 
         // Ottieni il nome dell'immagine dalla voce del menu cliccata
