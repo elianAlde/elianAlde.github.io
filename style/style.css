@@ -62,9 +62,14 @@ li{
 	height: 1000px;
 }
 
+#logo{
+	width: fit-content;
+	height: fit-content;
+}
+
 #logo_bg{
 	width: 100%;
-	height: 100px;
+	height: 200px;
 
 	display: flex;
 	justify-content: center;
