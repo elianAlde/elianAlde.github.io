@@ -61,3 +61,11 @@ li{
 #menu_list{
 	height: 1000px;
 }
+
+#logo_bg{
+	background-image: url("assets/logos/logo.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 150px;
+}
