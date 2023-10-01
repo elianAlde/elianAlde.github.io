@@ -14,12 +14,12 @@ $(document).ready(function() {
         $(this).addClass('active');
         $(this).children('label').addClass('active-label');
 
-        
+        /*        
         $("img").on('click', function() {
             const tipo = $(this).val();
             console.log(tipo);
             $(this).attr('src', 'assets/icons/' + $(this).attr("tipo") + "-color.svg");
         });
-        
+        */
     });
 });
