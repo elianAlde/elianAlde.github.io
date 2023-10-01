@@ -59,8 +59,13 @@ label{
 }
 
 .active {
-  background-color: #dddddd; 
+  /*background-color: #dddddd;*/ 
   border-radius: 20px; 
+}
+
+.active-label{
+	color: black;
+	font-weight: bold;
 }
 
 
