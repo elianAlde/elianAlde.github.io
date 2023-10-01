@@ -1,4 +1,3 @@
-
 $(document).ready(function() {
     // Ottieni tutti gli elementi del menu
     const menuItems = $('#lista_icone li');
@@ -14,12 +13,29 @@ $(document).ready(function() {
         $(this).addClass('active');
         $(this).children('label').addClass('active-label');
 
-        /*        
-        $("img").on('click', function() {
-            const tipo = $(this).val();
-            console.log(tipo);
-            $(this).attr('src', 'assets/icons/' + $(this).attr("tipo") + "-color.svg");
-        });
-        */
+        if($(this).attr("tipo") == "spaghetti"){
+            console.log("spaghetti è");
+            $(this).children('a').children('img').attr('src', 'assets/icons/' + "spaghetti" + "-color.svg");
+        }
+        if($(this).attr("tipo") == "meat"){
+            console.log("canne i cavaddu è");
+            $(this).children('a').children('img').attr('src', 'assets/icons/' + "meat" + "-color.svg");
+        }
+        if($(this).attr("tipo") == "pizza"){
+            console.log("pizza è");
+            $(this).children('a').children('img').attr('src', 'assets/icons/' + "pizza" + "-color.svg");
+        }
+        if($(this).attr("tipo") == "french-fries"){
+            console.log("frenchifries è");
+            $(this).children('a').children('img').attr('src', 'assets/icons/' + "french-fries" + "-color.svg");
+        }
+        if($(this).attr("tipo") == "drink"){
+            console.log("u drink è");
+            $(this).children('a').children('img').attr('src', 'assets/icons/' + "drink" + "-color.svg");
+        }
+        if($(this).attr("tipo") == "cake"){
+            console.log("u cannolu è");
+            $(this).children('a').children('img').attr('src', 'assets/icons/' + "cake" + "-color.svg");
+        }
     });
 });
