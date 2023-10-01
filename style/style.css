@@ -1,11 +1,7 @@
-body{
-	display: flex;
-	justify-content: center;
-}
-
 #menu_container{
-	width: 527px;
+	width: 514px;
 	background-color: #EDF5FF;
+	border: 1px solid red;
 }
 
 #stripe{
