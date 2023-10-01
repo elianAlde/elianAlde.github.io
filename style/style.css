@@ -1,27 +1,21 @@
-#menu_container{
-	width: 514px;
-	background-color: #EDF5FF;
-	border: 1px solid red;
+.container{
+	max-width: 454px;
 }
 
-#stripe{
-	width: 100%;
+.stripe{
 	height: 50px;
-	background-color: #EDF5FF;
+	/*background-color: #EDF5FF;*/
+	background-color: #5D2A2C;
 }
 
 #lang{
 	width: 100%;
 	background-color: white;
 	padding-top: 15px;
-
-	display: flex;
-	justify-content: end;
 }
 
 #sel_lang{
 	width: 80px;
-	margin-right: 10px;
 }
 
 #header{
@@ -35,43 +29,12 @@ p{
 }
 
 #icons{
-	width: 100%;
 	background-color: white;
-	border-bottom-right-radius: 40px;
-	border-bottom-left-radius: 40px;
+	border-bottom-right-radius: 30px;
+	border-bottom-left-radius: 30px;
 	/*box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);*/
 	box-shadow: 0 4px 2px -2px rgb(0 0 0 / 0.2);
 }
-
-nav{
-	width: 100%;
-	display: flex;
-	align-items: center;
-	padding: 15px;
-	padding-bottom: 0;
-}
-
-ul{
-	display: flex;
-	flex-direction: row;
-}
-
-li{
-	padding: 10px;
-}
-
-.active {
-  background-color: #dddddd; 
-  border-radius: 20px; 
-}
-
-#menu_list{
-	height: 1000px;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-}
-
 
 .icon-link{
 	display: flex;
@@ -84,18 +47,20 @@ label{
 	color: #cccccc;
 }
 
-#logo_bg{
-	width: 100%;
-	height: auto;
-	background-color: white;
-
-	display: flex;
-	justify-content: center;
-}
-
 #logo{
 	width: 280px;
 	height: 230px;
-	margin: 15px;
-	margin-bottom: 30px;
+}
+
+.active {
+  background-color: #dddddd; 
+  border-radius: 20px; 
+}
+
+
+#menu_list{
+	height: 1000px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }

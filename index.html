@@ -17,58 +17,64 @@
     <body>
         <div id="menu_container" class="container">
 
-            <div id="stripe" class="row"></div>
+            <div class="row stripe"></div>
 
-            <div id="lang">
-                <select id="sel_lang" class="form-select">
-                    <option selected>IT</option>
-                    <option>EN</option>
-                </select>
+            <div class="row "id="lang">
+                <div class="col d-flex justify-content-end">
+                    <select id="sel_lang" class="form-select">
+                        <option selected>IT</option>
+                        <option>EN</option>
+                    </select>
+                </div>
             </div>
                 
-            <div id="logo_bg">
-                 <img id="logo" src="assets/logos/logo.jpg">
+            <div class="row" id="logo_bg">
+                <div class="col text-center mt-3 mb-3">
+                    <img id="logo" src="assets/logos/logo.jpg">
+                </div>
             </div>
 
-            <div id="header">
-                <h4>Benvenuto</h4>
-                <p>Cosa ti piacerebbe mangiare oggi?</p>
+            <div class="row" id="header">
+                <div class="col">
+                    <h4>Benvenuto</h4>
+                    <p>Cosa ti piacerebbe mangiare oggi?</p>
+                </div>   
             </div>
 
-            <div id="icons">
-                <nav>
-                    <ul id="lista_icone">
-                      <li class="icon-link active text-center">
+            <div class="row mt-3" id="icons">
+                <div class="col d-flex justify-content-center">
+                    <ul class="d-flex flex-row justify-content-center p-0" id="lista_icone">
+                      <li tipo="spaghetti" class="icon-link active text-center px-2">
                         <a href="#"><img tipo="spaghetti" name="spaghetti" src="assets/icons/spaghetti-color.svg"></a>
                         <label>Primi</label>
                       </li>
 
-                      <li tipo="burger" class="icon-link text-center">
+                      <li tipo="burger" class="icon-link text-center px-2">
                         <a href="#"><img name="burger" src="assets/icons/burger-black.svg"></a>
                         <label>Secondi</label>
                       </li>
 
-                      <li tipo="pizza" class="icon-link text-center">
+                      <li tipo="pizza" class="icon-link text-center px-2">
                         <a href="#"><img name="pizza" src="assets/icons/pizza-black.svg"></a>
                         <label>Pizze</label>
                       </li>
 
-                      <li tipo="french-fries" class="icon-link text-center">
+                      <li tipo="french-fries" class="icon-link text-center px-2">
                         <a href="#"><img name="french-fries" src="assets/icons/french-fries-black.svg"></a>
                         <label>Contorni</label>
                       </li>
 
-                      <li tipo= "drink" class="icon-link text-center">
+                      <li tipo= "drink" class="icon-link text-center px-2">
                         <a href="#"><img name="drink" src="assets/icons/drink-black.svg"></a>
                         <label>Bevande</label>
                       </li>
 
-                      <li tipo="cake" class="icon-link text-center">
+                      <li tipo="cake" class="icon-link text-center px-2">
                         <a href="#"><img name="cake" src="assets/icons/cake-black.svg"></a>
                         <label>Dolci</label>
                       </li>
                     </ul>
-                </nav>
+                </div> 
             </div>
 
             <div id="menu_list">
