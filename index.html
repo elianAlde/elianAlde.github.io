@@ -10,7 +10,6 @@
         <link href="style/style.css" rel="stylesheet">
     
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script src="https://cdn.tailwindcss.com"></script>
         <script src="script/script.js"></script>
         <script src="script/attivato.js" async defer></script>
     </head>
@@ -18,7 +17,7 @@
     <body>
         <div id="menu_container">
 
-            <!--<div id="stripe"></div>-->
+            <div id="stripe"></div>
 
             <div id="lang">
                 <select id="sel_lang" class="form-select">
@@ -31,64 +30,49 @@
                  <img id="logo" src="assets/logos/logo.jpg">
             </div>
 
+            <div id="header">
+                <h4>Benvenuto</h4>
+                <p>Cosa ti piacerebbe mangiare oggi?</p>
+            </div>
+
             <div id="icons">
                 <nav>
                     <ul id="lista_icone">
-                      <li class="icon-link active">
-                        <a href="#"><img tipo="spaghetti" name="spaghetti" src="assets/icons/spaghetti-black.svg"></a>
+                      <li class="icon-link active text-center">
+                        <a href="#"><img tipo="spaghetti" name="spaghetti" src="assets/icons/spaghetti-color.svg"></a>
+                        <label>Primi</label>
                       </li>
-                      <li tipo="pizza" class="icon-link">
-                        <a href="#"><img name="pizza" src="assets/icons/pizza-black.svg"></a>
-                      </li>
-                      <li tipo="burger" class="icon-link">
+
+                      <li tipo="burger" class="icon-link text-center">
                         <a href="#"><img name="burger" src="assets/icons/burger-black.svg"></a>
+                        <label>Secondi</label>
                       </li>
-                      <li tipo="french-fries" class="icon-link">
+
+                      <li tipo="pizza" class="icon-link text-center">
+                        <a href="#"><img name="pizza" src="assets/icons/pizza-black.svg"></a>
+                        <label>Pizze</label>
+                      </li>
+
+                      <li tipo="french-fries" class="icon-link text-center">
                         <a href="#"><img name="french-fries" src="assets/icons/french-fries-black.svg"></a>
+                        <label>Contorni</label>
                       </li>
-                      <li tipo= "drink" class="icon-link">
+
+                      <li tipo= "drink" class="icon-link text-center">
                         <a href="#"><img name="drink" src="assets/icons/drink-black.svg"></a>
+                        <label>Bevande</label>
                       </li>
-                      <li tipo="cake" class="icon-link">
+
+                      <li tipo="cake" class="icon-link text-center">
                         <a href="#"><img name="cake" src="assets/icons/cake-black.svg"></a>
+                        <label>Dolci</label>
                       </li>
                     </ul>
                 </nav>
             </div>
 
             <div id="menu_list">
-                <div class="card">
-                    <div class="img"></div>
-                    <div class="textBox">
-                        <div class="textContent">
-                            <p class="h1">Clans of Clash</p>
-                        </div>
-                        <p class="p">Xhattmahs is not attacking your base!</p>
-                        <p class="p price">12.00$</p>
-                    <div>
-                </div></div></div>
-
-                <div class="card">
-                    <div class="img"></div>
-                    <div class="textBox">
-                        <div class="textContent">
-                            <p class="h1">Clans of Clash</p>
-                        </div>
-                        <p class="p">Xhattmahs is not attacking your base!</p>
-                        <p class="p price">12.00$</p>
-                    <div>
-                </div></div></div>
-
-                <div class="card">
-                    <div class="img"></div>
-                    <div class="textBox">
-                        <div class="textContent">
-                            <p class="h1">Clans of Clash</p>
-                        </div>
-                        <p class="p">Xhattmahs is not attacking your base!</p>
-                        <p class="p price">12.00$</p>
-                    <div>
-                </div></div></div>
+                
             </div>
         </div>
     </body>
