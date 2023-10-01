@@ -7,7 +7,7 @@ $(document).ready(function() {
     // Aggiungi un gestore di eventi click a ciascun elemento del menu
     menuItems.on('click', function() {
         // Rimuovi la classe 'active' da tutti gli elementi del menu
-        //menuItems.removeClass('active');
+        menuItems.removeClass('active');
         menuItemsLabel.removeClass('active-label');
 
         // Aggiungi la classe 'active' solo all'elemento cliccato
