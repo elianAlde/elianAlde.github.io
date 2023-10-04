@@ -1,0 +1,97 @@
+{
+  "nome_ristorante": "Gusto Italiano",
+  "categoria": "Cucina Italiana",
+  "menu": {
+    "primi_piatti": [
+      {
+        "nome": "Spaghetti alla Carbonara",
+        "descrizione": "Pasta spaghetti con uova, pancetta, pecorino e pepe nero.",
+        "prezzo": 14.99
+      },
+      {
+        "nome": "Lasagna al Forno",
+        "descrizione": "Strati di pasta, carne macinata, besciamella e formaggio gratinato.",
+        "prezzo": 16.99
+      },
+      {
+        "nome": "Risotto ai Funghi Porcini",
+        "descrizione": "Risotto cremoso con funghi porcini freschi.",
+        "prezzo": 15.99
+      }
+    ],
+    "secondi_piatti": [
+      {
+        "nome": "Bistecca Fiorentina",
+        "descrizione": "Bistecca alla griglia servita con contorno di patate arrosto e spinaci.",
+        "prezzo": 25.99
+      },
+      {
+        "nome": "Salmone alla Griglia",
+        "descrizione": "Filetto di salmone alla griglia con salsa al limone.",
+        "prezzo": 18.99
+      },
+      {
+        "nome": "Pollo Marsala",
+        "descrizione": "Petto di pollo in salsa di vino Marsala con funghi.",
+        "prezzo": 17.99
+      }
+    ],
+    "pizze": [
+      {
+        "nome": "Pizza Margherita",
+        "descrizione": "Pizza con pomodoro, mozzarella fresca e basilico.",
+        "prezzo": 9.99
+      },
+      {
+        "nome": "Pizza Quattro Stagioni",
+        "descrizione": "Pizza con pomodoro, mozzarella, prosciutto, funghi, carciofi e olive nere.",
+        "prezzo": 11.99
+      },
+      {
+        "nome": "Pizza Diavola",
+        "descrizione": "Pizza piccante con pomodoro, mozzarella e salame piccante.",
+        "prezzo": 10.99
+      }
+    ],
+    "dolci": [
+      {
+        "nome": "Tiramisù",
+        "descrizione": "Un classico dolce italiano a base di mascarpone e caffè.",
+        "prezzo": 6.99
+      },
+      {
+        "nome": "Panna Cotta",
+        "descrizione": "Dolce al caramello con salsa di fragole fresche.",
+        "prezzo": 7.99
+      }
+    ],
+    "bevande": [
+      {
+        "nome": "Acqua Minerale (500ml)",
+        "prezzo": 2.99
+      },
+      {
+        "nome": "Vino Rosso (Bottiglia)",
+        "prezzo": 18.99
+      },
+      {
+        "nome": "Birra Artigianale (Pint)",
+        "prezzo": 5.99
+      }
+    ],
+    "contorni": [
+      {
+        "nome": "Insalata Mista",
+        "prezzo": 4.99
+      },
+      {
+        "nome": "Patate Arrosto",
+        "prezzo": 3.99
+      },
+      {
+        "nome": "Verdure Grigliate",
+        "prezzo": 5.99
+      }
+    ]
+  }
+}
