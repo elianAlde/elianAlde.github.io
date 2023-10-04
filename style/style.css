@@ -2,6 +2,13 @@
 	max-width: 454px;
 }
 
+.comparsa{
+    display: none;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
 .stripe{
 	height: 50px;
 	/*background-color: #EDF5FF;*/
@@ -76,4 +83,26 @@ label{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+}
+
+.card{
+	width: 90%;
+	box-shadow: 0 4px 2px -2px rgb(0 0 0 / 0.2);
+	border-radius: 20px;
+}
+
+.card > h4{
+	margin-top: 5px;
+}
+
+.img-product{
+	border-radius: 20px;
+}
+
+.prezzo{
+	color: black;
+
+	display: flex;
+	justify-content: end;
+	margin-right: 10px;
 }
