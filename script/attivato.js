@@ -41,7 +41,6 @@ $(document).ready(function() {
 });
 
 
-//CODICE ANIMAZIONE COMPARSA CARDS
 //Effetto animazione caricamento contenuti a comparsa
 document.addEventListener("DOMContentLoaded", function() {
     var contenutiDaMostrare = document.querySelectorAll(".comparsa");
