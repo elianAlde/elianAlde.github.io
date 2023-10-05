@@ -1,3 +1,4 @@
+/*
 const menuUl = document.querySelectorAll('.icon-link');
 const infoElements = document.querySelectorAll('.card');
 
@@ -15,3 +16,4 @@ menuUl.forEach(item => {
         targetElement.style.display = 'block';
     });
 });
+*/

@@ -16,8 +16,6 @@ $(document).ready(function() {
         if($(this).attr("tipo") == "spaghetti"){
             console.log("spaghetti è");
             $(this).children('a').children('img').attr('src', 'assets/icons/' + "spaghetti" + "-color.svg");
-            $("#pizza").style("display: none;");
-            $("#primo").style("display: block;");
         }
         if($(this).attr("tipo") == "meat"){
             console.log("canne i cavaddu è");
@@ -26,8 +24,6 @@ $(document).ready(function() {
         if($(this).attr("tipo") == "pizza"){
             console.log("pizza è");
             $(this).children('a').children('img').attr('src', 'assets/icons/' + "pizza" + "-color.svg");
-            $("#pizza").style("display: block;");
-            $("#primo").style("display: none;");
         }
         if($(this).attr("tipo") == "french-fries"){
             console.log("frenchifries è");
