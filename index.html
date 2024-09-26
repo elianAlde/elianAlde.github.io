@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Elian Alderuccio Hub</title>
+        <!-- Inclusione Bootstrap Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+
+    <body class="bg-gray-100 flex items-center justify-center h-screen">
+        <div class="text-center p-6 bg-white rounded-lg shadow-lg max-w-sm w-full">
+            <!-- Foto profilo -->
+            <div class="flex justify-center mb-4">
+                <img src="mia.jpg" alt="User Photo" class="rounded-full w-32 h-32 object-cover border-4 border-gray-300">
+            </div>
+
+            <!-- Nome e Cognome -->
+            <h1 class="text-2xl font-bold text-gray-800">Elian Alderuccio</h1>
+            <p class="mb-5 break-all">elianalderuccio00@gmail.com</p>
+
+            <!-- Bottoni dei social con icone e animazioni -->
+            <div class="space-y-4">
+                <a id="showAlert" href="#" class="fade-in btn-icon w-full bg-green-500 text-white py-2 rounded-lg transition duration-300 ease-in-out hover:bg-green-600">
+                    <i class="bi bi-globe text-xl"></i> Sito web
+                </a>
+                <a href="https://www.linkedin.com/in/elian-alderuccio-245a94265/" target="_blank" class="fade-in btn-icon w-full bg-blue-500 text-white py-2 rounded-lg transition duration-300 ease-in-out hover:bg-blue-600" style="animation-delay: 0.1s">
+                    <i class="bi bi-linkedin text-xl"></i> LinkedIn
+                </a>
+                <a href="https://github.com/elianAlde" target="_blank" class="fade-in btn-icon w-full bg-gray-800 text-white py-2 rounded-lg transition duration-300 ease-in-out hover:bg-gray-900" style="animation-delay: 0.2s">
+                    <i class="bi bi-github text-xl"></i> GitHub
+                </a>
+                <a href="https://www.instagram.com/elian_alderuccio" target="_blank" class="fade-in btn-icon w-full bg-pink-500 text-white py-2 rounded-lg transition duration-300 ease-in-out hover:bg-pink-600" style="animation-delay: 0.3s">
+                    <i class="bi bi-instagram text-xl"></i> Instagram
+                </a>
+                <a href="https://www.facebook.com" target="_blank" class="fade-in btn-icon w-full bg-blue-600 text-white py-2 rounded-lg transition duration-300 ease-in-out hover:bg-blue-700" style="animation-delay: 0.4s">
+                    <i class="bi bi-facebook text-xl"></i> Facebook
+                </a>
+            </div>
+        </div>
+
+        <div id="alert" class="hidden fixed bottom-4 left-1/2 transform -translate-x-1/2 bg-orange-100 border-l-4 border-orange-500 text-orange-700 p-4 rounded-lg" role="alert">
+            <p class="font-bold">Attenzione</p>
+            <p>Sito in costruzione</p>
+        </div>
+    </body>
+
+    <style>
+        /* Animazioni per la comparsa dei bottoni */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 0.5s forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .btn-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn-icon i {
+            margin-right: 8px;
+        }
+    </style>
+
+    <script>
+        // Funzione per mostrare l'alert
+        document.getElementById('showAlert').onclick = function(event) {
+            event.preventDefault(); // Impedisce il comportamento predefinito del link
+            const alertDiv = document.getElementById('alert');
+            alertDiv.classList.remove('hidden');
+
+            // Chiudi automaticamente l'alert dopo 5 secondi
+            setTimeout(() => {
+                alertDiv.classList.add('hidden');
+            }, 2000);
+        };
+    </script>
+</html>
