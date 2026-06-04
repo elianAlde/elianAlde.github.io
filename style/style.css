@@ -1,0 +1,168 @@
+:root{
+    --bg:#ffffff;
+    --text:#000000;
+    --muted:#6c757d;
+    --border:#e9ecef;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.8;
+}
+
+.navbar{
+    background:rgba(255,255,255,.95);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--border);
+}
+
+.navbar-brand{
+    font-weight:700;
+    letter-spacing:-1px;
+}
+
+.nav-link{
+    color:#000 !important;
+    font-size:.9rem;
+}
+
+section{
+    padding:120px 0;
+}
+
+.section-title{
+    margin-bottom:60px;
+}
+
+.section-title h2{
+    font-size:3rem;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.section-title p{
+    color:var(--muted);
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+}
+
+.hero h1{
+    font-size:clamp(3rem,8vw,6rem);
+    font-weight:700;
+    line-height:1;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    max-width:650px;
+    color:var(--muted);
+}
+
+.btn-custom{
+    border:1px solid #000;
+    color:#000;
+    border-radius:0;
+    padding:12px 24px;
+    transition:.3s;
+    min-width: 160px;
+}
+
+.btn-custom:hover{
+    background:#000;
+    color:#fff;
+}
+
+.timeline-item{
+    border-left:2px solid #000;
+    padding-left:30px;
+    margin-bottom:40px;
+    position:relative;
+}
+
+.timeline-item::before{
+    content:"";
+    width:12px;
+    height:12px;
+    background:#000;
+    border-radius:50%;
+    position:absolute;
+    left:-7px;
+    top:8px;
+}
+
+.timeline-item h5{
+    margin-bottom:5px;
+}
+
+.timeline-item span{
+    color:var(--muted);
+    font-size:.9rem;
+}
+
+.project-card{
+    border:1px solid var(--border);
+    padding:30px;
+    height:100%;
+    transition:.3s;
+    min-height: 240px;
+}
+
+.project-card:hover{
+    transform:translateY(-5px);
+    border-color:#000;
+}
+
+.project-card h4{
+    margin-bottom:15px;
+}
+
+.project-card p{
+    color:var(--muted);
+}
+
+.contact-box{
+    max-width:600px;
+}
+
+.footer{
+    padding:40px 0;
+    border-top:1px solid var(--border);
+    text-align:center;
+    color:var(--muted);
+}
+
+.reveal{
+    opacity:0;
+    transform:translateY(40px);
+    transition:all .8s ease;
+}
+
+.reveal.active{
+    opacity:1;
+    transform:none;
+}
+
+.project-link{
+    text-decoration:none;
+    color:inherit;
+    display:block;
+}
+
+.project-link:hover{
+    color:inherit;
+}
+
+.company-logo{
+    width: 200px;
+}
