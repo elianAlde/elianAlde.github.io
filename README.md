@@ -82,12 +82,44 @@ Each post is written in a single language, shown with a small IT/EN badge; the l
 
 ### Local preview
 
+Jekyll 3.10 is the version used by GitHub Pages. It needs a recent Ruby (on macOS the bundled one, 2.6, is too old).
+
+**First-time setup – macOS**
+
+1. Install Ruby with Homebrew:
+   ```bash
+   brew install ruby
+   ```
+2. Put Homebrew's Ruby and its gems first in your `PATH`:
+   ```bash
+   echo 'export PATH="/opt/homebrew/opt/ruby/bin:$(/opt/homebrew/opt/ruby/bin/gem env gemdir)/bin:$PATH"' >> ~/.zshrc
+   source ~/.zshrc
+   ```
+   `ruby -v` should now print a recent version, not 2.6.
+3. Install Jekyll and its dependencies (`csv`, `base64`, `bigdecimal` and `logger` are needed because recent Ruby versions no longer bundle them):
+   ```bash
+   gem install jekyll:3.10.0 kramdown-parser-gfm webrick csv base64 bigdecimal logger
+   ```
+
+**First-time setup – Windows**
+
+1. Download and run **Ruby+Devkit** (latest x64 version) from [rubyinstaller.org](https://rubyinstaller.org/downloads/). Keep the option *Add Ruby executables to your PATH* checked.
+2. At the end of the installer, leave *Run `ridk install`* checked and choose option **3** (MSYS2 and MINGW development toolchain) in the window that opens. If you skipped it, run `ridk install` from a terminal.
+3. Open a **new** PowerShell or Command Prompt and check that `ruby -v` works.
+4. Install Jekyll and its dependencies (`tzinfo-data` and `wdm` are Windows-only: time zone data and file watching for the auto-rebuild):
+   ```powershell
+   gem install jekyll:3.10.0 kramdown-parser-gfm webrick csv base64 bigdecimal logger tzinfo-data wdm
+   ```
+
+**Run the site** (once everything is installed)
+
 ```bash
-gem install jekyll -v 3.10.0 kramdown-parser-gfm webrick
+cd elianAlde.github.io
 jekyll serve
 ```
 
-Then open http://localhost:4000. Jekyll 3.10 is the version used by GitHub Pages; it needs a recent Ruby, since the one bundled with macOS is too old: install it with `brew install ruby` and put `/opt/homebrew/opt/ruby/bin` (plus the gem `bin` folder it prints) at the front of your `PATH`.
+Open http://localhost:4000. Jekyll rebuilds the site on every change, so just reload the page; stop it with `Ctrl + C`.
+If you get `command not found: jekyll` (or *not recognized* on Windows) in a terminal opened before the setup, open a new terminal; on macOS `source ~/.zshrc` works too.
 
 
 <div align="center">
