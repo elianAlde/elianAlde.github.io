@@ -1,0 +1,24 @@
+title: Elian Alderuccio
+description: Full-stack developer – portfolio e blog
+url: "https://elianalde.github.io"
+baseurl: ""
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+permalink: /blog/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+exclude:
+  - README.md
+  - .claude
+  - Gemfile
+  - Gemfile.lock

@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<article class="post">
+    <a href="/blog/" class="post-back"><i class="bi bi-arrow-left"></i> <span data-i18n="blog.back">All posts</span></a>
+
+    <header class="post-header">
+        <div class="post-meta">
+            <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d/%m/%Y" }}</time>
+            <span class="post-lang">{{ page.lang | default: "it" | upcase }}</span>
+        </div>
+        <h1>{{ page.title }}</h1>
+        {% if page.description %}<p class="post-lead">{{ page.description }}</p>{% endif %}
+    </header>
+
+    <div class="post-content">
+        {{ content }}
+    </div>
+</article>

@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 
 <html lang="en">
@@ -24,32 +26,11 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
         <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="style/blog.css">
     </head>
 
     <body>
-        <nav class="navbar navbar-expand-lg fixed-top">
-            <div class="container">
-                <a class="navbar-brand" href="#">ELIAN ALDERUCCIO</a>
-
-                <div class="nav-controls order-lg-last">
-                    <button type="button" class="nav-control lang-switch" id="lang-switch" aria-label="Switch language">IT</button>
-                    <button type="button" class="nav-control" id="theme-switch" aria-label="Toggle dark mode"><i class="bi bi-moon-stars"></i></button>
-                </div>
-
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Menu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="menu">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#education" data-i18n="nav.education">Education</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#experience" data-i18n="nav.experience">Experience</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#projects" data-i18n="nav.projects">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact" data-i18n="nav.contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        {% include nav.html %}
 
         <section class="hero">
             <div class="container">
@@ -164,6 +145,21 @@
                             </div>
                         </a>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog">
+            <div class="container">
+                <div class="section-title reveal">
+                    <h2 data-i18n="blog.title">Blog</h2>
+                    <p data-i18n="blog.subtitle">Notes on software, projects and what I'm learning.</p>
+                </div>
+
+                <div class="reveal">
+                    {% include post-list.html posts=site.posts limit=3 %}
+
+                    <a href="/blog/" class="btn btn-custom mt-4" data-i18n="blog.all">All posts</a>
                 </div>
             </div>
         </section>

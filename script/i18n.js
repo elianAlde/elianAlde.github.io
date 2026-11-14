@@ -1,5 +1,10 @@
 const translations = {
     en: {
+        "nav.blog": "Blog",
+        "blog.title": "Blog",
+        "blog.subtitle": "Notes on software, projects and what I'm learning.",
+        "blog.all": "All posts",
+        "blog.back": "All posts",
         "nav.education": "Education",
         "nav.experience": "Experience",
         "nav.projects": "Projects",
@@ -36,6 +41,11 @@ const translations = {
         "proj.proxyx.kind": "Side Project"
     },
     it: {
+        "nav.blog": "Blog",
+        "blog.title": "Blog",
+        "blog.subtitle": "Appunti su software, progetti e su quello che sto imparando.",
+        "blog.all": "Tutti gli articoli",
+        "blog.back": "Tutti gli articoli",
         "nav.education": "Formazione",
         "nav.experience": "Esperienza",
         "nav.projects": "Progetti",
