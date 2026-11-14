@@ -19,6 +19,9 @@ Minimalist single-page developer portfolio built with HTML, Bootstrap and JavaSc
 
 - Responsive single-page design
 - Minimal black & white aesthetic
+- **Light / dark mode** with sun/moon toggle (follows the system preference, choice saved in the browser)
+- **Bilingual (English / Italian)** with an IT/EN switch, automatic detection of the browser language and saved preference
+- Hero section with profile photo, short bio, call-to-action buttons and GitHub / LinkedIn links
 - Smooth scrolling navigation
 - Scroll reveal animations
 - Education & Experience timeline
@@ -30,11 +33,17 @@ Minimalist single-page developer portfolio built with HTML, Bootstrap and JavaSc
 ## 📂 Sections
 
 - Home
-- About Me
 - Education
 - Experience
 - Projects
 - Get In Touch
+
+
+## 🌍 Translations
+
+All translatable text is marked in `index.html` with a `data-i18n="key"` attribute (English is the default written in the HTML).
+Translations live in `script/i18n.js`, one dictionary per language: to change a sentence, edit it there.
+The dark mode logic lives in `script/theme.js`.
 
 
 <div align="center">
